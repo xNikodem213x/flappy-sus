@@ -1,3 +1,4 @@
+const character = document.getElementById("sus")
 let jumping = 0;
 
 function losowanie() {
@@ -9,7 +10,7 @@ setInterval(function () {
     const characterTop =
     parseInt(window.getComputedStyle(sus).getPropertyValue("top"));
     if (jumping === 0) {
-        sus.style.top = (characterTop + 1) +"px;"
+        character.style.top = (characterTop + 1) +"px;"
     };
 }, 10);
 function jump() {
