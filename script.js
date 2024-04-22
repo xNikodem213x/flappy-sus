@@ -1,4 +1,4 @@
-let jumping = 0
+let jumping = 0;
 
 function losowanie() {
     const random = -((Math.random() * 400) +200);
@@ -7,9 +7,9 @@ function losowanie() {
 hole.addEventListener('animationiteration', losowanie);
 setInterval(function () {
     const characterTop =
-    parseInt(window.getComputedStyle(character).getPropertyValue("top"));
+    parseInt(window.getComputedStyle(sus).getPropertyValue("top"));
     if (jumping === 0) {
-        character.style.top = (characterTop + 1) +"px;"
+        sus.style.top = (characterTop + 1) +"px;"
     };
 }, 10);
 function jump() {
